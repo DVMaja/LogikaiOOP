@@ -8,6 +8,10 @@ public class Lada {
     private String anyag;
     private boolean kincs;
 
+    public Lada() {
+
+    }
+
     public Lada(String allitas, String anyag, boolean kincs) {
         this.allitas = allitas;
         this.anyag = anyag;
@@ -29,8 +33,7 @@ public class Lada {
     public void setKincs(boolean kincs) {
         this.kincs = kincs;
     }
-    
-    
+
     public String getAllitas() {
         return allitas;
     }
@@ -39,7 +42,6 @@ public class Lada {
         this.allitas = allitas;
     }
 
-    @Override
     public int hashCode() {
         int hash = 7;
         hash = 79 * hash + Objects.hashCode(this.allitas);
