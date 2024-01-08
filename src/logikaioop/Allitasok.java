@@ -3,6 +3,7 @@ package logikaioop;
 import java.util.Objects;
 
 public class Allitasok {
+
     private String allitas;
 
     public Allitasok(String allitas) {
@@ -22,6 +23,12 @@ public class Allitasok {
         return "Allitasok{" + "allitas=" + allitas + '}';
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + Objects.hashCode(this.allitas);
+        return hash;
+    }
 
     public boolean equals(Allitasok mondat) {
         if (this == mondat) {
@@ -36,6 +43,5 @@ public class Allitasok {
         final Allitasok other = (Allitasok) mondat;
         return Objects.equals(this.allitas, other.allitas);
     }
-    
-    
+
 }
