@@ -4,25 +4,18 @@ import java.util.Objects;
 
 public class Lada {
 
-    private String allitas, anyag;
+    private String allitas;
+    private String anyag;
     private boolean kincs;
 
     public Lada() {
-       
+
     }
 
     public Lada(String allitas, String anyag, boolean kincs) {
         this.allitas = allitas;
         this.anyag = anyag;
         this.kincs = kincs;
-    }
-
-    public String getAllitas() {
-        return allitas;
-    }
-
-    public void setAllitas(String allitas) {
-        this.allitas = allitas;
     }
 
     public String getAnyag() {
@@ -41,12 +34,14 @@ public class Lada {
         this.kincs = kincs;
     }
 
-    @Override
-    public String toString() {
-        return "Allitas{" + "allitas=" + allitas + ", anyag=" + anyag + ", kincs=" + kincs + '}';
+    public String getAllitas() {
+        return allitas;
     }
 
-    @Override
+    public void setAllitas(String allitas) {
+        this.allitas = allitas;
+    }
+
     public int hashCode() {
         int hash = 7;
         hash = 79 * hash + Objects.hashCode(this.allitas);
@@ -65,6 +60,11 @@ public class Lada {
         }
         final Lada other = (Lada) mondat;
         return Objects.equals(this.allitas, other.allitas);
+    }
+
+    @Override
+    public String toString() {
+        return "Lada{" + "allitas=" + allitas + ", anyag=" + anyag + ", kincs=" + kincs + '}';
     }
 
 }
