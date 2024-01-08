@@ -1,11 +1,11 @@
 package logikaioop;
 
-public class Feladatok {
+public class Feladat {
 
     private String leiras;
     private int melyik;
 
-    public Feladatok(String leiras) {
+    public Feladat(String leiras) {
         Lada lada1 = new Lada("Az 1. állítás!", "", true);
         Lada lada2 = new Lada("Az 2. állítás!", "", true);
         Lada lada3 = new Lada("Az 3. állítás!", "", true);
