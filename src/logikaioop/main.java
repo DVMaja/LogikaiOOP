@@ -1,7 +1,7 @@
 package logikaioop;
 
 //import java.util.Scanner;
-public class LogikaiOOP {
+public class main {
 
     public static void main(String[] args) {
         //Scanner scr = new Scanner(System.in);
