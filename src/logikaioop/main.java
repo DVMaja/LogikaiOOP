@@ -1,7 +1,6 @@
 package logikaioop;
 
 import controller.LadaKontroller;
-import java.util.Scanner;
 
 public class main {
 
